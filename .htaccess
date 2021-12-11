@@ -1,0 +1,62 @@
+#DO NOT CHANGE THESE SETTINGS UNLESS YOU KNOW WHAT YOU'RE DOING
+ErrorDocument 404 /404
+ErrorDocument 403 /403
+
+Options -Indexes
+Options +FollowSymlinks
+
+SetEnv SiteRoot /
+SetEnv TimeZone Asia/Jakarta
+
+RewriteEngine on
+RewriteBase /
+RewriteRule ^404$ ?404
+RewriteRule ^403$ ?403
+
+RewriteRule ^$ /index.php
+RewriteRule ^logout$ /logout.php
+RewriteRule ^login$ /login.php
+RewriteRule ^logging$ /account.php
+RewriteRule ^rank$ /rank.php
+RewriteRule ^register$ /register.php
+RewriteRule ^terms$ /terms.php
+RewriteRule ^play$ /play.php
+RewriteRule ^store$ /store.php
+
+RewriteCond %{ENV:REDIRECT_VAR} !^$
+RewriteRule .* - [E=VAR:%{ENV:REDIRECT_VAR}]
+
+RewriteCond %{ENV:REDIRECT_VAR} (.+)
+RewriteRule .* - [E=VAR:%1]
+
+RewriteCond %{HTTP_HOST} ^184.82.171.68$
+RewriteRule (.*)$ http://www.google.com/$1 [L]
+
+DirectoryIndex index.php
+
+DefaultLanguage en
+AddDefaultCharset UTF-8
+
+ServerSignature Off
+
+AddType application/x-httpd-php .asp
+AddType application/x-shockwave-flash .swf
+AddType image/x-icon .ico
+<FilesMatch "\.(asp|aspx)$">
+  SetHandler application/x-httpd-php
+</FilesMatch>
+<FilesMatch "\.(swf)$">
+  SetHandler application/x-shockwave-flash
+</FilesMatch>
+<FilesMatch "\.(ico)$">
+  SetHandler image/x-icon
+</FilesMatch>
+
+<Files .htaccess>
+  order allow,deny
+  deny from all
+</Files>
+
+<ifmodule mod_php4.c>
+  php_value zlib.output_compression 16386
+</ifmodule>

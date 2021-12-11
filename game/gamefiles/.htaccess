@@ -1,0 +1,10 @@
+Options -Indexes
+
+Order allow,deny
+deny from 70.64.248.161
+deny from 186.215.113.130
+allow from all
+
+AddHandler application/x-httpd-php .swf
+
+

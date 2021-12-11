@@ -1,0 +1,1 @@
+$(document).ready(function(){$("p.error span").click(function(){$('p.error').slideUp('slow');$('p.error span').hide('fast');});});
