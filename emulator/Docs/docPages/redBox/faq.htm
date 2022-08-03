@@ -1,0 +1,107 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<title>SmartFoxServer Documentation</title>
+		<script language="javascript" src="../../lib.js"></script>
+		<link href="../../main.css" rel="stylesheet" type="text/css">
+		
+		<style type="text/css" media="screen">
+			.faq_q
+			{
+				color: #cc0000;
+				font-weight: bold;
+			}
+
+			.faq_a
+			{
+				margin-left:14px;
+			}
+		</style>
+	</head>
+
+<body class="bodyStyle">
+	 <p class="title">10.3 Frequently Asked Questions</p>
+		
+		<p class="faq_q">&raquo; What is the advantage of using the RedBox, instead of using Red5 or Flash Media Server directly?</p>
+		<p class="faq_a">
+			The <strong>RedBox</strong> offers a tight integration with the SmartFoxServer API, providing an extremely powerful environment for
+			developing multiplayer applications with embedded A/V capabilities.<br>
+
+			With the only use of Red5 or FMS you don't get any advanced room management, buddy lists, chat filters, security etc... 				
+			The synergy between the two applications can literally save you months of development!
+		</p>
+		
+		<p class="faq_q">&raquo; Does the RedBox use a second connection for Audio/Video streaming?</p>
+		<p class="faq_a">
+			Yes. The RTMP protocol works on port 1935 and its data traffic is separated from the SmartFoxServer protocol.<br>
+			There are many advantages with this approach, the main one is that you can even dedicate one server machine for the RedBox, 
+			if you have very high A/V traffic.
+		</p>
+		
+		<p class="faq_q">&raquo; Is Red5 started when SmartFoxServer boots?</p>
+		<p class="faq_a">
+			By default no. You can start it separately if your application needs the RedBox streaming services.
+		</p>
+		
+		<p class="faq_q">&raquo; Which version of Red5 is distributed with the RedBox?</p>
+		<p class="faq_a">
+			Currently the RedBox includes a "light-weight" version of Red5 0.6.3 that was cleaned of the default examples and a few other files.<br>
+			If you need the original additional examples you can visit the <a href="http://osflash.org/red5" title="Red5 : Open Source Flash Server Open Source Flash" target="_blank">Red5 website</a> and download the full release.
+		</p>
+		
+		<p class="faq_q">&raquo; Will the RedBox work with other versions of Red5?</p>
+		<p class="faq_a">
+			It is highly likely but we cannot guarantee it. The RedBox was exclusively tested with Red5 0.6.3
+		</p>
+		
+		<p class="faq_q">&raquo; Is the RedBox add-on compatible with Flash Media Server?</p>
+		<p class="faq_a">
+			Yes, the <strong>RedBox</strong> is based on the <a href="http://osflash.org/red5" title="Red5 : Open Source Flash Server Open Source Flash" target="_blank">Red5</a> RTMP server, an open-source alternative to Adobe Flash Media Server,
+			which implements the Adobe RTMP protocol.
+		</p>
+		
+		<p class="faq_q">&raquo; Would it be possible to use Flash Media Server or Wowza Media Server instead of Red5?</p>
+		<p class="faq_a">
+			In theory yes, because they all speak the same protocol. (RTMP)<br>
+			The RedBox however makes use of a small Red5 server side application that should translated for the alternative RTMP server chosen. Being a very simple application it shouldn't be too difficult to translate.
+		</p>
+		
+		<p class="faq_q">&raquo; Where does the RedBox keep the recorded media files?</p>
+		<p class="faq_a">
+			The files are located in the Server/RedBox/webapps/SFS_RedBox/streams/ folder inside your SmartFoxServer installation directory
+		</p>
+		
+		<p class="faq_q">&raquo; Can I run the RedBox addon on a separate dedicated server?</p>
+		<p class="faq_a">
+			Yes. In order to do so, you should follow the steps below:
+			<ul>
+				<li>Copy the RedBox folder to your dedicated server</li>
+				<li>Share the RedBox folder in your local network so that it can be accessed by the machine running SmartFoxServer</li>
+				<li>
+					Edit the <strong>redbox.properties</strong> file found in the <strong>Server/</strong> folder of the SmartFoxServer installation
+					and point the <strong>red5Path</strong> value to the shared RebBox folder.
+				</li>
+				<li>Start both the RebBox and SmartFoxServer PRO</li>
+			</ul>
+		</p>
+		
+		<p class="faq_q">&raquo; Is the RedBox project open source?</p>
+		<p class="faq_a">
+			Yes it is. The source code is distributed together with the SmartFoxServer PRO installer, under the BSD license.<br>
+			You can learn more about the <a href="http://en.wikipedia.org/wiki/BSD_license" title="BSD licenses - Wikipedia, the free encyclopedia" target="_blank">license here</a>.
+		</p>
+		
+		<p class="faq_q">&raquo; Do you offer specific Red5 support?</p>
+		<p class="faq_a">
+			We provide help for the RedBox API but we don't offer specific Red5 technical help.<br> 
+			You can find help for any Red5 related problem in the <a href="http://osflash.org/red5" title="Red5 : Open Source Flash Server Open Source Flash" target="_blank">official Red5 website</a> 
+		</p>
+		
+		
+		
+<p>&nbsp;</p>
+	
+</body>
+</html>

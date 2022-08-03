@@ -1,0 +1,63 @@
+<!--
+
+   Hidden Project SFS Configuration File
+   (c) 2013 Hidden Project
+   
+   SmartFoxServer version 1.6.9
+-->
+<SmartFoxConfig>
+	<ServerSetup>
+		<ServerIP>185.25.48.67</ServerIP>
+		<ServerPort>5588</ServerPort>    
+		<AutoSendPolicyFile>true</AutoSendPolicyFile>
+
+		<MaxUserIdleTime>1440</MaxUserIdleTime>
+		<MaxSocketIdleTime>60</MaxSocketIdleTime>     
+		<UserVarsOptimization>true</UserVarsOptimization>
+		<DeadChannelsPolicy>strict</DeadChannelsPolicy>
+
+		<LogMaxSize>5000000</LogMaxSize>
+		<LogMaxFiles>5</LogMaxFiles>
+
+		<AdminLogin>Yusa_Emi</AdminLogin>
+		<AdminPassword>020736428526</AdminPassword>
+
+		<OutQueueThreads>4</OutQueueThreads> 
+		<ExtHandlerThreads>4</ExtHandlerThreads>
+		
+		<ClientMessagQueue>
+			<QueueSize>50</QueueSize>
+			<MaxAllowedDroppedPackets>1</MaxAllowedDroppedPackets>
+		</ClientMessagQueue>
+
+		<AdminAllowedAddresses>
+			<AllowedAddress>*.*.*.*</AllowedAddress>
+		</AdminAllowedAddresses>
+		<RawProtocolSeparator><![CDATA[%]]></RawProtocolSeparator>    
+		<DynamicPropertiesClass>java.util.concurrent.ConcurrentHashMap</DynamicPropertiesClass>  
+	</ServerSetup>
+
+	<Zones>    
+		<Zone name="zone_master" customLogin="true" emptyNames="false">
+            <MaxRoomNamesLen>500</MaxRoomNamesLen>
+			<Rooms>
+				<Room name="Lobby" autoJoin="false" limbo="true" /> 
+			</Rooms>
+			<DatabaseManager active="true">
+				<Driver>com.mysql.jdbc.Driver</Driver>
+				<ConnectionString>jdbc:mysql://127.0.0.1:3306/hiddenproject?allowMultiQueries=true&amp;useCompression=true</ConnectionString>           
+				<UserName>root</UserName>
+				<Password>393939EnteIsla</Password>             
+				<TestSQL><![CDATA[SELECT 1]]></TestSQL>           
+				<MaxActive>50</MaxActive>
+				<MaxIdle>25</MaxIdle>           
+				<OnExhaustedPool>grow</OnExhaustedPool>
+				<BlockTime>1000</BlockTime>
+			</DatabaseManager>
+			<Extensions>
+				<extension name="zm" className="mext.maou.v2.EnteIsla" type="java" />
+			</Extensions>
+		</Zone>
+	</Zones>
+
+</SmartFoxConfig>

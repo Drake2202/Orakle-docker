@@ -1,0 +1,124 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>SmartFoxServer Release Notes</title>
+<style type="text/css" media="screen">
+	.bodyStyle
+	{
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-size: 12px;
+		line-height: 17px;
+		color: #333333;
+		margin: 10px;
+	}
+	.title {
+		font-family: Verdana, Arial, "Times New Roman", Times, serif;
+		font-size: 20px;
+		font-weight: bold;
+		color: #FF3300;
+	}
+	.subTitle {
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-size: 15px;
+		font-weight: bold;
+		color: #FF3300;
+	}
+	.copyright
+	{
+		font-size: 90%;
+		color: #777;
+	}
+	a {
+		font-weight: bold;
+		color: #990000;
+		text-decoration: none;
+
+	}
+	a:hover {
+		color: #ff0000;
+		text-decoration: none;
+		font-weight: bold;
+	}
+</style>
+</head>
+
+<body class="bodyStyle">
+	<p class="title">SmartFoxServer PRO 1.6.6 :: Release Notes</p>
+	<strong>SmartFoxServer 1.6.6</strong> includes all previous bug-fixes and new features introduced in patches <strong>1.6.3 </strong>through <strong>1.6.5</strong>, plus
+	the following changes:
+	<p class="subTitle">1.6.6:</p>
+	<ul>
+		<li><strong>Server Side:</strong></li>
+		<ul>
+			<li>Fixed a logging bug with Actionscript errors, resulting in a NPE</li>
+			<li>Fixed a logging bug when loading a Buddy List, resulting in a NPE</li>
+			<li>Fixed a bug with firing client side onBuddyListError when user buddylist is full</li>
+			<li>An onBuddyListError is fired when User A attempts to add User B to his buddy list, using <em>mutualAddBuddy</em>, when User B has his list full</li>
+			<li>Added new &lt;WarnOnWrongZoneRequest&gt; configuration parameter, allows to send a warning to the client when attempting to log into a non-existing Zone. It is recommended to turn it off in production.</li>
+			<li>Added new &lt;ownerListFullErrorMsg&gt; setting in BuddyList 2.0 (see chapter 2.1 of the docs for more details)</li>
+			<li>Added new &lt;targetListFullErrorMsg&gt; setting in BuddyList 2.0 (see chapter 2.1 of the docs for more details)</li>
+			<li>Added new switchPlayer() server side method to turn a player into a spectator (opposite to switchSpectator)</li>
+			<li>Added new PLAYER_SWITCHED server side Event</li>
+			<li>Changed the way Zone Reload from the AdminTool works for Buddy List. Previously reloading Zones would clear all previous buddy lists</li>
+			<li>Update embedded JRE (1.6.0_13)</li>
+			<li>Updated embedded H2 database engine (1.1.110)</li>
+			<li>Updated embedded Jetty http server (6.1.16)</li>
+		</ul>
+		<br>
+		<li><strong>Client Side:</strong></li>
+		<ul>
+			<li>Added new switchPlayer() request. Allows to turn a player into a spectator inside a game room</li>
+			<li>Added new onPlayerSwitched event, fired in response to a switchPlayer() request</li>
+		</ul>
+
+		<br>
+		<li><strong>Misc:</strong></li>
+		<ul>
+			<li>New "Getting started" welcome page by simply pointing the browser to http://localhost:8080 after installing. Allows to quickly get started with SmartFoxServer PRO and browse all the Examples</li>
+			<li>Added new SmartFoxBits BasePack Components (Community Edition) for Flex, including documentation and examples</li>
+			<li>Added OpenSpace demo, including examples, documentation and Map Editor</li>
+		</ul>
+		
+		
+	</ul>
+	
+	<p class="subTitle">Read carefully if you are updating from version 1.6.3 or earlier:</p>
+	<p>
+		In version 1.6.5. we changed slightly the way in which the <strong>&lt;ServerIp&gt; </strong>setting works. You can either specify the wanted <strong>IP address</strong> or use an <strong>asterisk (*)</strong> to bind all available IP addresses (default in previous 1.6.x versions)
+	</p>
+	<p>
+		Specifying the IP address in the <strong>&lt;ServerIp&gt;</strong> will make the server listen exclusively on that IP.<br>
+		This means that the <strong>BlueBox</strong> will need to be pointed to that address in order to work correctly.
+
+		For optimal performance of the BlueBox we recommend to use <strong>&lt;ServerIp&gt;*&lt;/ServerIp&gt;</strong>
+	</p>
+	
+	<p class="subTitle">Known Bugs:</p>
+	<p>
+		There is a known bug related to the creation of non-player characters (NPC). We have noticed that all connections coming from NPCs remain in CLOSE_WAIT state
+		after closing them. This is not an issue if NPCs are created once and then used for the entire life cycle of the server instance. However if you plan to dynamically create and
+		destroy many of them it could eventually exhaust the number of sockets/file-descriptors available of the underlying OS.
+	</p>
+	
+	<hr />
+	
+	<p class="subTitle">1.6.5:</p>
+	<ul>
+		<li>Fixed a bug in dispatching &quot;userLost&quot; event at Room Level for Java extensions: only rooms where the user was joined will receive a notification. Previously it was dispatched to all rooms.<li>
+		<li>Added extra defensive exception check to avoid that custom Extension code generating an exception when handling the &quot;userLost&quot; event causes incomplete disconnections at Server level<li>
+		<li>Fixed IPFilter so that it doesn&#x27;t interfere with the BlueBox<li>
+		<li>Add new BlueBox 1.0.5 update<li>
+		<li>ExtensionHelper new feature: added a rebootServer() that allows extensions to restart the server from code<li>
+		<li>New server side event called &quot;serverReady&quot; is fired to any extension as soon as the server engine is ready to accept connections. The event is necessary for proper NPC initialization. Since every NPC uses a connection to the loopback interface, the extension should know when the server engine is ready to accept those connections. The init() method of an extension is not the right place because it is executed before the socket engine starts.<li>
+		<li>Fixed FINE level logging for server side setUserVariables() method<li>
+		<li>Updated documentation, in particular chapter 6.10 (Buddy list 2.0)<li>
+		<li>Added an NPC tutorial showing how to create bots that interact with real users in the avatarChat example.<li>
+		<li>AS 2.0 and AS 3.0 Flash API: fixed a small bug with UserVariables updates when users are joined in multiple rooms. With a particular combination of rooms the client could receive a null object instead of the reference to the User who updated the variables.</li>
+	</ul>
+	
+	<p>&nbsp;</p>
+	
+</body>
+</html>

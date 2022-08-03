@@ -1,0 +1,90 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>SmartFoxServer Documentation</title>
+<script language="javascript" src="../../lib.js"></script>
+<link href="../../main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="bodyStyle">
+ 	<p class="title">9.1 BlueBox overview </p>
+	<img src="images/bbThumb.jpg" width="220" height="149" alt="BbThumb" align="right" class="imgBorder" style="margin-left:10px; margin-right:8px;">
+	<p>
+		<strong>SmartFoxServer 1.6</strong> introduces the <strong>BlueBox</strong>, a new add-on module designed to allow connections behind firewall and proxies.
+		When the add-on is active the Flash client is transparently redirected to the <strong>BlueBox</strong>, if a direct 
+		socket connection is not available. 
+	</p>
+	<p>
+		The <strong>BlueBox</strong> enables players under restricted network configurations to play and enjoy fast multiplayer apps and games with little
+		to no noticeable performance loss. All existing SmartFoxServer applications can take advantage of the <strong>BlueBox without any code change! </strong>	
+	</p>
+	<p>Just <strong>recompile your SWF</strong> files with the latest client API and you're up and running.</p>
+	<p>
+		Behind the scenes the <strong>BlueBox</strong> will wrap the SmartFoxServer protocol in HTTP packets, similarly to what is done with a so-called
+		<em>http-tunnel</em>. The behavior of the <strong>BlueBox</strong> is however pretty different from <em>regular polling</em> solutions. 
+		The major disadvantages of this approach is the continuous traffic of requests coming from the clients, even during
+		inactivity. Additionally the overall performance isn't very good especially if the polling interval is bigger than a couple of seconds. 
+	</p>
+	<p>
+		The <strong>BlueBox</strong> uses a different approach eliminating the need
+		for continuous polling. Additionally the client API provide the developer with the ability to fine tune the server response times, <strong><u>allowing near real-time performance!</u></strong> 
+	</p>
+	
+	<p class="subTitle">&raquo; What's new in the API</p>
+	<p>
+		In order to test your existing <strong>SmartFoxServer</strong> applications with <strong>BlueBox</strong> support, you simply have to recompile them
+		with the new <strong>API provided in the package</strong>. The API will attempt a socket connection first and, on failure, they will
+		switch to the http connection.
+	</p>
+	<p>
+		New properties and methods are available to the <strong>SmartFoxClient</strong> object:
+		<ul>
+			<li>
+				<strong>smartConnect:</strong> If true will attempt a connection to the <strong>BlueBox</strong> 
+				if a socket connection is not available (default = true).<br>
+
+			</li>
+			<li>
+				<strong>getConnectionMode():</strong> the method returns the current connection mode. It can be any of the following three states:
+				<ul>
+					<li>SmartFoxClient.CONNECTION_MODE_DISCONNECTED</li>
+					<li>SmartFoxClient.CONNECTION_MODE_SOCKET</li>
+					<li>SmartFoxClient.CONNECTION_MODE_HTTP</li>
+
+				</ul><br>
+			</li>
+			<li>
+				<strong>httpPort:</strong> specifies the port of the embedded web server (8080 by default). <br>
+			</li>
+			<li>
+				<strong>httpPollSpeed:</strong> specifies the minimum interval between two polling requests (750ms by default).<br>
+
+			</li>
+		</ul>
+	</p>
+
+	
+	<p class="subTitle">&raquo; Running the BlueBox</p>
+	<p>
+		The <strong>BlueBox</strong> is tightly integrated with SmartFoxServer and requires almost no setup or configuration.
+		It is shipped together with the server and it only requires that the <strong>internal webserver</strong> is running. <br>
+		In order to control the web server activity you can use the <strong>SmartFoxServer AdminTool</strong> under the <strong>BlueBox Monitor</strong>. 
+		Additionally you can turn it on or off by default from the main <strong>config.xml</strong> file.
+	</p>
+	
+	<p align="center"><img src="images/bboxManager.png" width="640" height="436" alt="blue box manager" class="imgBorder"></p>
+	
+	<p>&nbsp;</p>
+ 	
+	<hr width="99%" size="1" noshade>
+
+	<table width="99%"  border="0" cellspacing="0" cellpadding="4">
+	 <tr>
+	   <td align="center"><a href="../../index.htm" target="_top" class="navLinks">doc index </a></td>
+	 </tr>
+	</table>
+
+</body>
+</html>

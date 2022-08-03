@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actionScriptProperties mainApplicationPath="SmartVideoClipPlayer.mxml" version="1">
+<compiler additionalCompilerArguments="-locale en_US" copyDependentFiles="true" generateAccessible="false" htmlExpressInstall="true" htmlGenerate="true" htmlHistoryManagement="true" htmlPlayerVersion="9.0.0" htmlPlayerVersionCheck="true" outputFolderPath="bin" sourceFolderPath="src" strict="true" warn="true">
+<compilerSourcePath/>
+<libraryPath>
+<libraryPathEntry kind="3" linkType="2" path="${FRAMEWORKS}/libs/playerglobal.swc"/>
+<libraryPathEntry kind="3" linkType="1" path="${FRAMEWORKS}/libs/utilities.swc"/>
+<libraryPathEntry kind="3" linkType="1" path="${FRAMEWORKS}/libs/flex.swc" sourcepath="${FRAMEWORKS}/source"/>
+<libraryPathEntry kind="3" linkType="1" path="${FRAMEWORKS}/libs/framework.swc" sourcepath="${FRAMEWORKS}/source"/>
+<libraryPathEntry kind="3" linkType="1" path="${FRAMEWORKS}/libs/rpc.swc"/>
+<libraryPathEntry kind="3" linkType="1" path="${FRAMEWORKS}/libs/charts.swc" sourcepath="${FRAMEWORKS}/source"/>
+<libraryPathEntry kind="1" linkType="1" path="${FRAMEWORKS}/locale/{locale}"/>
+<libraryPathEntry kind="3" linkType="1" path="${DOCUMENTS}/gotoAndPlay/SmartFoxServer/RedBox/RedBoxClient_AS3/bin/RedBoxClient_AS3.swc" sourcepath="/RedBoxClient_AS3/src"/>
+<libraryPathEntry kind="3" linkType="1" path="${DOCUMENTS}/gotoAndPlay/SmartFoxServer/SmartFoxClient_AS3/bin/SmartFoxClient_AS3.swc" sourcepath="/SmartFoxClient_AS3/src"/>
+</libraryPath>
+<sourceAttachmentPath>
+<sourceAttachmentPathEntry kind="3" linkType="1" path="${FRAMEWORKS}/libs/flex.swc" sourcepath="${FRAMEWORKS}/source"/>
+<sourceAttachmentPathEntry kind="3" linkType="1" path="${FRAMEWORKS}/libs/framework.swc" sourcepath="${FRAMEWORKS}/source"/>
+<sourceAttachmentPathEntry kind="3" linkType="1" path="${FRAMEWORKS}/libs/charts.swc" sourcepath="${FRAMEWORKS}/source"/>
+<sourceAttachmentPathEntry kind="3" linkType="1" path="${DOCUMENTS}/gotoAndPlay/SmartFoxServer/RedBox/RedBoxClient_AS3/bin/RedBoxClient_AS3.swc" sourcepath="/RedBoxClient_AS3/src"/>
+<sourceAttachmentPathEntry kind="3" linkType="1" path="${DOCUMENTS}/gotoAndPlay/SmartFoxServer/SmartFoxClient_AS3/bin/SmartFoxClient_AS3.swc" sourcepath="/SmartFoxClient_AS3/src"/>
+</sourceAttachmentPath>
+</compiler>
+<applications>
+<application path="SmartVideoClipPlayer.mxml"/>
+</applications>
+<buildCSSFiles/>
+</actionScriptProperties>

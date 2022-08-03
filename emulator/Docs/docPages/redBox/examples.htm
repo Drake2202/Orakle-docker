@@ -1,0 +1,87 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<title>SmartFoxServer Documentation</title>
+		<script language="javascript" src="../../lib.js"></script>
+		<link href="../../main.css" rel="stylesheet" type="text/css">
+		
+		<style type="text/css" media="screen">
+			.sideNoteTitle
+			{
+				font-size: 120%;
+				font-weight: bold;
+				color: #888;
+			}
+			.sideNote
+			{
+				font: 110% Georgia, Verdana, Arial;
+				line-height: 19px;
+				margin: 20px;
+				padding: 10px;
+				background-color: #f6f6f6;
+				border: 2px dashed #CCC;
+				color: #333;
+			}
+		</style>
+	</head>
+
+<body class="bodyStyle">
+	 <p class="title">10.2 RedBox Examples</p>
+	 
+		<p>
+			The <strong>RedBox</strong> project free add-on comes with four different examples showing the features offered by the extended APIs.<br>
+			You find the examples in the Examples/RedBox/ folder of your SmartFoxServer PRO installation directory: each application comes with fully commented source code.
+		</p>
+		
+		<p class="subTitle">&raquo; SmartFoxChatAV</p>
+		<p>
+			This example takes the orignal Actionscript 3 Chat example and enhances it with live A/V chat.
+			It uses the <strong>AVChatManager</strong> client side class to easily manage invitation requests/responses and the RTMP connection.
+		</p>
+		<p>
+			<img src="images/ss_avchat.jpg" width="600" height="386" alt="Avchat" class="imgBorder">
+		</p>
+		
+		<br>
+		
+		<p class="subTitle">&raquo; SmartMessengerAV</p>
+		<p>
+			This sample application is based on the <strong>SmartMessenger</strong> tutorial which integrates a chat, a buddy list system and private A/V 
+			live chatting. It shows a more advanced use of the <strong>AVChatManager</strong> to separate A/V chat requests.
+		</p>
+		<p>
+			<img src="images/ss_avMessenger.jpg" alt="AvMessenger" class="imgBorder">
+		</p>
+		
+		<br>
+		
+		<p class="subTitle">&raquo; SmartVideoClipPlayer</p>
+		<p>
+			This application demonstrates how to build a live shared library of videos, a la "YouTube" providing tools for easily retrieving
+			the list of available clips and assigning extra custom properties to each video clip. Properties are also persistent and can contain
+			any data: author, date, description, etc...<br>
+			
+			The <strong>AVClipManager</strong> allows also to record a clip from the attached web-cam and save it on disk together with custom properties.
+		</p>	
+		<p>
+			<img src="images/ss_avclipManager_play.jpg" alt="ss_avclipManager_play" class="imgBorder">
+		</p>
+		
+		<br>
+		
+		<p class="subTitle">&raquo; SmartVideoConference</p>
+		<p>
+			The example shows how to create a video conference application, ideal for collaborative environments.
+			The <strong>AVCastManager</strong> handles the live cast publishing/playing to/from the Red5 server. Unlike the other RedBox classes, the AVCastManager works on a room basis to leverage the access control and moderation features of SmartFoxServer rooms.
+		</p>
+		<p>
+			<img src="images/ss_avcastManager.jpg" alt="ss_castManager" class="imgBorder">
+		</p>
+		
+	
+<p>&nbsp;</p>
+	
+</body>
+</html>

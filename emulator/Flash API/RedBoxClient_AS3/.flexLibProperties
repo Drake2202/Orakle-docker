@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flexLibProperties version="1">
+<includeClasses>
+<classEntry path="com.smartfoxserver.redbox.AVClipManager"/>
+<classEntry path="com.smartfoxserver.redbox.events.RedBoxClipEvent"/>
+<classEntry path="com.smartfoxserver.redbox.events.RedBoxChatEvent"/>
+<classEntry path="com.smartfoxserver.redbox.utils.Logger"/>
+<classEntry path="com.smartfoxserver.redbox.utils.Constants"/>
+<classEntry path="com.smartfoxserver.redbox.data.Clip"/>
+<classEntry path="com.smartfoxserver.redbox.AVCastManager"/>
+<classEntry path="com.smartfoxserver.redbox.data.ChatSession"/>
+<classEntry path="com.smartfoxserver.redbox.data.LiveCast"/>
+<classEntry path="com.smartfoxserver.redbox.exceptions.ClipActionNotAllowedException"/>
+<classEntry path="com.smartfoxserver.redbox.exceptions.InvalidChatSessionIdException"/>
+<classEntry path="com.smartfoxserver.redbox.AVChatManager"/>
+</includeClasses>
+<includeResources/>
+<namespaceManifests/>
+</flexLibProperties>

@@ -1,0 +1,158 @@
+STATUS | wrapper  | 2013/11/19 09:18:33 | --> Wrapper Started as Service
+STATUS | wrapper  | 2013/11/19 09:18:33 | Java Service Wrapper Community Edition 64-bit 3.5.20
+STATUS | wrapper  | 2013/11/19 09:18:33 |   Copyright (C) 1999-2013 Tanuki Software, Ltd. All Rights Reserved.
+STATUS | wrapper  | 2013/11/19 09:18:33 |     http://wrapper.tanukisoftware.com
+STATUS | wrapper  | 2013/11/19 09:18:33 | 
+STATUS | wrapper  | 2013/11/19 09:18:33 | Launching a JVM...
+INFO   | jvm 1    | 2013/11/19 09:18:38 | WrapperManager: Initializing...
+INFO   | jvm 1    | 2013/11/19 09:18:47 | |::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::|
+INFO   | jvm 1    | 2013/11/19 09:18:47 | |                                                            |
+INFO   | jvm 1    | 2013/11/19 09:18:47 | |              ...:::  SmartFoxServer :::...                 |
+INFO   | jvm 1    | 2013/11/19 09:18:47 | |                Multiplayer Socket Server                   |
+INFO   | jvm 1    | 2013/11/19 09:18:47 | |                      version 1.6.9                         |
+INFO   | jvm 1    | 2013/11/19 09:18:47 | |                           ---                              |
+INFO   | jvm 1    | 2013/11/19 09:18:47 | |              (c) 2004 - 2010 gotoAndPlay()                 |
+INFO   | jvm 1    | 2013/11/19 09:18:47 | |                  www.smartfoxserver.com                    |
+INFO   | jvm 1    | 2013/11/19 09:18:47 | |                    www.gotoandplay.it                      |
+INFO   | jvm 1    | 2013/11/19 09:18:47 | |                                                            |
+INFO   | jvm 1    | 2013/11/19 09:18:47 | |::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::|
+INFO   | jvm 1    | 2013/11/19 09:18:47 | 
+INFO   | jvm 1    | 2013/11/19 09:18:47 | 09:18:47.127 - [ INFO ] > Starting h2 engine...
+INFO   | jvm 1    | 2013/11/19 09:18:47 | 09:18:47.753 - [ FINE ] > Connection --> it.gotoandplay.smartfoxserver.db.DbManager@728cacdc
+INFO   | jvm 1    | 2013/11/19 09:18:47 | 
+INFO   | jvm 1    | 2013/11/19 09:18:47 | 
+INFO   | jvm 1    | 2013/11/19 09:18:47 | --- [ System Info ] ------------------------------------------
+INFO   | jvm 1    | 2013/11/19 09:18:47 | 
+INFO   | jvm 1    | 2013/11/19 09:18:47 | System CPU(s): 8
+INFO   | jvm 1    | 2013/11/19 09:18:47 | VM Max memory: 1908 MB
+INFO   | jvm 1    | 2013/11/19 09:18:47 | 
+INFO   | jvm 1    | 2013/11/19 09:18:47 | os.name: Windows Server 2012
+INFO   | jvm 1    | 2013/11/19 09:18:47 | os.arch: amd64
+INFO   | jvm 1    | 2013/11/19 09:18:47 | os.version: 6.2
+INFO   | jvm 1    | 2013/11/19 09:18:47 | java.version: 1.7.0_25
+INFO   | jvm 1    | 2013/11/19 09:18:47 | java.vendor: Oracle Corporation
+INFO   | jvm 1    | 2013/11/19 09:18:47 | java.vendor.url: http://java.oracle.com/
+INFO   | jvm 1    | 2013/11/19 09:18:47 | java.vm.specification.version: 1.7
+INFO   | jvm 1    | 2013/11/19 09:18:47 | java.vm.version: 23.25-b01
+INFO   | jvm 1    | 2013/11/19 09:18:47 | java.vm.vendor: Oracle Corporation
+INFO   | jvm 1    | 2013/11/19 09:18:47 | java.vm.name: Java HotSpot(TM) 64-Bit Server VM
+INFO   | jvm 1    | 2013/11/19 09:18:47 | 
+INFO   | jvm 1    | 2013/11/19 09:18:47 | 
+INFO   | jvm 1    | 2013/11/19 09:18:47 | --- [ Network Cards ] -----------------------------------------
+INFO   | jvm 1    | 2013/11/19 09:18:47 | 
+INFO   | jvm 1    | 2013/11/19 09:18:48 | Card:Software Loopback Interface 1
+INFO   | jvm 1    | 2013/11/19 09:18:48 |  -> 127.0.0.1
+INFO   | jvm 1    | 2013/11/19 09:18:48 |  -> 0:0:0:0:0:0:0:1
+INFO   | jvm 1    | 2013/11/19 09:18:48 | Card:WAN Miniport (L2TP)
+INFO   | jvm 1    | 2013/11/19 09:18:48 | Card:WAN Miniport (SSTP)
+INFO   | jvm 1    | 2013/11/19 09:18:48 | Card:WAN Miniport (IKEv2)
+INFO   | jvm 1    | 2013/11/19 09:18:48 | Card:WAN Miniport (PPTP)
+INFO   | jvm 1    | 2013/11/19 09:18:48 | Card:WAN Miniport (PPPOE)
+INFO   | jvm 1    | 2013/11/19 09:18:48 | Card:WAN Miniport (IP)
+INFO   | jvm 1    | 2013/11/19 09:18:48 | Card:WAN Miniport (IPv6)
+INFO   | jvm 1    | 2013/11/19 09:18:48 | Card:WAN Miniport (Network Monitor)
+INFO   | jvm 1    | 2013/11/19 09:18:48 | Card:Microsoft Kernel Debug Network Adapter
+INFO   | jvm 1    | 2013/11/19 09:18:48 | Card:RAS Async Adapter
+INFO   | jvm 1    | 2013/11/19 09:18:48 | Card:Intel(R) 82574L Gigabit Network Connection
+INFO   | jvm 1    | 2013/11/19 09:18:48 |  -> 185.25.48.101
+INFO   | jvm 1    | 2013/11/19 09:18:48 |  -> 185.25.48.67
+INFO   | jvm 1    | 2013/11/19 09:18:48 |  -> fe80:0:0:0:9d22:5432:7b3e:4b34%12
+INFO   | jvm 1    | 2013/11/19 09:18:48 | Card:Microsoft ISATAP Adapter
+INFO   | jvm 1    | 2013/11/19 09:18:48 |  -> fe80:0:0:0:200:5efe:b919:3043%13
+INFO   | jvm 1    | 2013/11/19 09:18:48 |  -> fe80:0:0:0:200:5efe:b919:3065%13
+INFO   | jvm 1    | 2013/11/19 09:18:48 | Card:Microsoft 6to4 Adapter
+INFO   | jvm 1    | 2013/11/19 09:18:48 |  -> 2002:b919:3043:0:0:0:b919:3043
+INFO   | jvm 1    | 2013/11/19 09:18:48 |  -> 2002:b919:3065:0:0:0:b919:3065
+INFO   | jvm 1    | 2013/11/19 09:18:48 | Card:Teredo Tunneling Pseudo-Interface
+INFO   | jvm 1    | 2013/11/19 09:18:48 |  -> 2001:0:9d38:90d7:14ac:3190:46e6:cf9a
+INFO   | jvm 1    | 2013/11/19 09:18:48 |  -> fe80:0:0:0:14ac:3190:46e6:cf9a%15
+INFO   | jvm 1    | 2013/11/19 09:18:48 | Card:WAN Miniport (IP)-QoS Packet Scheduler-0000
+INFO   | jvm 1    | 2013/11/19 09:18:48 | Card:WAN Miniport (IPv6)-QoS Packet Scheduler-0000
+INFO   | jvm 1    | 2013/11/19 09:18:48 | Card:WAN Miniport (Network Monitor)-QoS Packet Scheduler-0000
+INFO   | jvm 1    | 2013/11/19 09:18:48 | Card:Intel(R) 82574L Gigabit Network Connection-QoS Packet Scheduler-0000
+INFO   | jvm 1    | 2013/11/19 09:18:48 | Card:Intel(R) 82574L Gigabit Network Connection-WFP 802.3 MAC Layer LightWeight Filter-0000
+INFO   | jvm 1    | 2013/11/19 09:18:48 | Card:Intel(R) 82574L Gigabit Network Connection-WFP Native MAC Layer LightWeight Filter-0000
+INFO   | jvm 1    | 2013/11/19 09:21:20 | 
+INFO   | jvm 1    | 2013/11/19 09:21:20 | 
+INFO   | jvm 1    | 2013/11/19 09:21:20 | Shutting down server...
+INFO   | jvm 1    | 2013/11/19 09:21:20 | 
+STATUS | wrapper  | 2013/11/19 09:21:21 | <-- Wrapper Stopped
+STATUS | wrapper  | 2013/11/19 09:21:22 | --> Wrapper Started as Service
+STATUS | wrapper  | 2013/11/19 09:21:22 | Java Service Wrapper Community Edition 64-bit 3.5.20
+STATUS | wrapper  | 2013/11/19 09:21:22 |   Copyright (C) 1999-2013 Tanuki Software, Ltd. All Rights Reserved.
+STATUS | wrapper  | 2013/11/19 09:21:22 |     http://wrapper.tanukisoftware.com
+STATUS | wrapper  | 2013/11/19 09:21:22 | 
+STATUS | wrapper  | 2013/11/19 09:21:22 | Launching a JVM...
+INFO   | jvm 1    | 2013/11/19 09:21:22 | WrapperManager: Initializing...
+INFO   | jvm 1    | 2013/11/19 09:21:26 | |::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::|
+INFO   | jvm 1    | 2013/11/19 09:21:26 | |                                                            |
+INFO   | jvm 1    | 2013/11/19 09:21:26 | |              ...:::  SmartFoxServer :::...                 |
+INFO   | jvm 1    | 2013/11/19 09:21:26 | |                Multiplayer Socket Server                   |
+INFO   | jvm 1    | 2013/11/19 09:21:26 | |                      version 1.6.9                         |
+INFO   | jvm 1    | 2013/11/19 09:21:26 | |                           ---                              |
+INFO   | jvm 1    | 2013/11/19 09:21:26 | |              (c) 2004 - 2010 gotoAndPlay()                 |
+INFO   | jvm 1    | 2013/11/19 09:21:26 | |                  www.smartfoxserver.com                    |
+INFO   | jvm 1    | 2013/11/19 09:21:26 | |                    www.gotoandplay.it                      |
+INFO   | jvm 1    | 2013/11/19 09:21:26 | |                                                            |
+INFO   | jvm 1    | 2013/11/19 09:21:26 | |::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::|
+INFO   | jvm 1    | 2013/11/19 09:21:26 | 
+INFO   | jvm 1    | 2013/11/19 09:21:26 | 09:21:26.220 - [ INFO ] > Starting h2 engine...
+INFO   | jvm 1    | 2013/11/19 09:21:26 | 09:21:26.768 - [ FINE ] > Connection --> it.gotoandplay.smartfoxserver.db.DbManager@7d40a941
+INFO   | jvm 1    | 2013/11/19 09:21:26 | 
+INFO   | jvm 1    | 2013/11/19 09:21:26 | 
+INFO   | jvm 1    | 2013/11/19 09:21:26 | --- [ System Info ] ------------------------------------------
+INFO   | jvm 1    | 2013/11/19 09:21:26 | 
+INFO   | jvm 1    | 2013/11/19 09:21:26 | System CPU(s): 8
+INFO   | jvm 1    | 2013/11/19 09:21:26 | VM Max memory: 1908 MB
+INFO   | jvm 1    | 2013/11/19 09:21:26 | 
+INFO   | jvm 1    | 2013/11/19 09:21:26 | os.name: Windows Server 2012
+INFO   | jvm 1    | 2013/11/19 09:21:26 | os.arch: amd64
+INFO   | jvm 1    | 2013/11/19 09:21:26 | os.version: 6.2
+INFO   | jvm 1    | 2013/11/19 09:21:26 | java.version: 1.7.0_25
+INFO   | jvm 1    | 2013/11/19 09:21:26 | java.vendor: Oracle Corporation
+INFO   | jvm 1    | 2013/11/19 09:21:26 | java.vendor.url: http://java.oracle.com/
+INFO   | jvm 1    | 2013/11/19 09:21:26 | java.vm.specification.version: 1.7
+INFO   | jvm 1    | 2013/11/19 09:21:26 | java.vm.version: 23.25-b01
+INFO   | jvm 1    | 2013/11/19 09:21:26 | java.vm.vendor: Oracle Corporation
+INFO   | jvm 1    | 2013/11/19 09:21:26 | java.vm.name: Java HotSpot(TM) 64-Bit Server VM
+INFO   | jvm 1    | 2013/11/19 09:21:26 | 
+INFO   | jvm 1    | 2013/11/19 09:21:26 | 
+INFO   | jvm 1    | 2013/11/19 09:21:26 | --- [ Network Cards ] -----------------------------------------
+INFO   | jvm 1    | 2013/11/19 09:21:26 | 
+INFO   | jvm 1    | 2013/11/19 09:21:27 | Card:Software Loopback Interface 1
+INFO   | jvm 1    | 2013/11/19 09:21:27 |  -> 127.0.0.1
+INFO   | jvm 1    | 2013/11/19 09:21:27 |  -> 0:0:0:0:0:0:0:1
+INFO   | jvm 1    | 2013/11/19 09:21:27 | Card:WAN Miniport (L2TP)
+INFO   | jvm 1    | 2013/11/19 09:21:27 | Card:WAN Miniport (SSTP)
+INFO   | jvm 1    | 2013/11/19 09:21:27 | Card:WAN Miniport (IKEv2)
+INFO   | jvm 1    | 2013/11/19 09:21:27 | Card:WAN Miniport (PPTP)
+INFO   | jvm 1    | 2013/11/19 09:21:27 | Card:WAN Miniport (PPPOE)
+INFO   | jvm 1    | 2013/11/19 09:21:27 | Card:WAN Miniport (IP)
+INFO   | jvm 1    | 2013/11/19 09:21:27 | Card:WAN Miniport (IPv6)
+INFO   | jvm 1    | 2013/11/19 09:21:27 | Card:WAN Miniport (Network Monitor)
+INFO   | jvm 1    | 2013/11/19 09:21:27 | Card:Microsoft Kernel Debug Network Adapter
+INFO   | jvm 1    | 2013/11/19 09:21:27 | Card:RAS Async Adapter
+INFO   | jvm 1    | 2013/11/19 09:21:27 | Card:Intel(R) 82574L Gigabit Network Connection
+INFO   | jvm 1    | 2013/11/19 09:21:27 |  -> 185.25.48.101
+INFO   | jvm 1    | 2013/11/19 09:21:27 |  -> 185.25.48.67
+INFO   | jvm 1    | 2013/11/19 09:21:27 |  -> fe80:0:0:0:9d22:5432:7b3e:4b34%12
+INFO   | jvm 1    | 2013/11/19 09:21:27 | Card:Microsoft ISATAP Adapter
+INFO   | jvm 1    | 2013/11/19 09:21:27 |  -> fe80:0:0:0:200:5efe:b919:3043%13
+INFO   | jvm 1    | 2013/11/19 09:21:27 |  -> fe80:0:0:0:200:5efe:b919:3065%13
+INFO   | jvm 1    | 2013/11/19 09:21:27 | Card:Microsoft 6to4 Adapter
+INFO   | jvm 1    | 2013/11/19 09:21:27 |  -> 2002:b919:3043:0:0:0:b919:3043
+INFO   | jvm 1    | 2013/11/19 09:21:27 |  -> 2002:b919:3065:0:0:0:b919:3065
+INFO   | jvm 1    | 2013/11/19 09:21:27 | Card:Teredo Tunneling Pseudo-Interface
+INFO   | jvm 1    | 2013/11/19 09:21:27 |  -> 2001:0:9d38:90d7:14ac:3190:46e6:cf9a
+INFO   | jvm 1    | 2013/11/19 09:21:27 |  -> fe80:0:0:0:14ac:3190:46e6:cf9a%15
+INFO   | jvm 1    | 2013/11/19 09:21:27 | Card:WAN Miniport (IP)-QoS Packet Scheduler-0000
+INFO   | jvm 1    | 2013/11/19 09:21:27 | Card:WAN Miniport (IPv6)-QoS Packet Scheduler-0000
+INFO   | jvm 1    | 2013/11/19 09:21:27 | Card:WAN Miniport (Network Monitor)-QoS Packet Scheduler-0000
+INFO   | jvm 1    | 2013/11/19 09:21:27 | Card:Intel(R) 82574L Gigabit Network Connection-QoS Packet Scheduler-0000
+INFO   | jvm 1    | 2013/11/19 09:21:27 | Card:Intel(R) 82574L Gigabit Network Connection-WFP 802.3 MAC Layer LightWeight Filter-0000
+INFO   | jvm 1    | 2013/11/19 09:21:27 | Card:Intel(R) 82574L Gigabit Network Connection-WFP Native MAC Layer LightWeight Filter-0000
+INFO   | jvm 1    | 2013/11/19 09:22:07 | 
+INFO   | jvm 1    | 2013/11/19 09:22:07 | 
+INFO   | jvm 1    | 2013/11/19 09:22:07 | Shutting down server...
+INFO   | jvm 1    | 2013/11/19 09:22:07 | 
+STATUS | wrapper  | 2013/11/19 09:22:08 | <-- Wrapper Stopped

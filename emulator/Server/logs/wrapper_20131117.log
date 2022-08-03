@@ -1,0 +1,232 @@
+STATUS | wrapper  | 2013/11/17 07:21:10 | --> Wrapper Started as Service
+STATUS | wrapper  | 2013/11/17 07:21:10 | Java Service Wrapper Community Edition 64-bit 3.5.20
+STATUS | wrapper  | 2013/11/17 07:21:10 |   Copyright (C) 1999-2013 Tanuki Software, Ltd. All Rights Reserved.
+STATUS | wrapper  | 2013/11/17 07:21:10 |     http://wrapper.tanukisoftware.com
+STATUS | wrapper  | 2013/11/17 07:21:10 | 
+STATUS | wrapper  | 2013/11/17 07:21:10 | Launching a JVM...
+INFO   | jvm 1    | 2013/11/17 07:21:18 | WrapperManager: Initializing...
+INFO   | jvm 1    | 2013/11/17 07:21:28 | |::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::|
+INFO   | jvm 1    | 2013/11/17 07:21:28 | |                                                            |
+INFO   | jvm 1    | 2013/11/17 07:21:28 | |              ...:::  SmartFoxServer :::...                 |
+INFO   | jvm 1    | 2013/11/17 07:21:28 | |                Multiplayer Socket Server                   |
+INFO   | jvm 1    | 2013/11/17 07:21:28 | |                      version 1.6.9                         |
+INFO   | jvm 1    | 2013/11/17 07:21:28 | |                           ---                              |
+INFO   | jvm 1    | 2013/11/17 07:21:28 | |              (c) 2004 - 2010 gotoAndPlay()                 |
+INFO   | jvm 1    | 2013/11/17 07:21:28 | |                  www.smartfoxserver.com                    |
+INFO   | jvm 1    | 2013/11/17 07:21:28 | |                    www.gotoandplay.it                      |
+INFO   | jvm 1    | 2013/11/17 07:21:28 | |                                                            |
+INFO   | jvm 1    | 2013/11/17 07:21:28 | |::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::|
+INFO   | jvm 1    | 2013/11/17 07:21:28 | 
+INFO   | jvm 1    | 2013/11/17 07:21:28 | 07:21:28.688 - [ INFO ] > Starting h2 engine...
+INFO   | jvm 1    | 2013/11/17 07:21:30 | 07:21:30.640 - [ FINE ] > Connection --> it.gotoandplay.smartfoxserver.db.DbManager@47e476fc
+INFO   | jvm 1    | 2013/11/17 07:21:30 | 
+INFO   | jvm 1    | 2013/11/17 07:21:30 | 
+INFO   | jvm 1    | 2013/11/17 07:21:30 | --- [ System Info ] ------------------------------------------
+INFO   | jvm 1    | 2013/11/17 07:21:30 | 
+INFO   | jvm 1    | 2013/11/17 07:21:30 | System CPU(s): 8
+INFO   | jvm 1    | 2013/11/17 07:21:30 | VM Max memory: 1908 MB
+INFO   | jvm 1    | 2013/11/17 07:21:30 | 
+INFO   | jvm 1    | 2013/11/17 07:21:30 | os.name: Windows Server 2012
+INFO   | jvm 1    | 2013/11/17 07:21:30 | os.arch: amd64
+INFO   | jvm 1    | 2013/11/17 07:21:30 | os.version: 6.2
+INFO   | jvm 1    | 2013/11/17 07:21:30 | java.version: 1.7.0_25
+INFO   | jvm 1    | 2013/11/17 07:21:30 | java.vendor: Oracle Corporation
+INFO   | jvm 1    | 2013/11/17 07:21:30 | java.vendor.url: http://java.oracle.com/
+INFO   | jvm 1    | 2013/11/17 07:21:30 | java.vm.specification.version: 1.7
+INFO   | jvm 1    | 2013/11/17 07:21:30 | java.vm.version: 23.25-b01
+INFO   | jvm 1    | 2013/11/17 07:21:30 | java.vm.vendor: Oracle Corporation
+INFO   | jvm 1    | 2013/11/17 07:21:30 | java.vm.name: Java HotSpot(TM) 64-Bit Server VM
+INFO   | jvm 1    | 2013/11/17 07:21:30 | 
+INFO   | jvm 1    | 2013/11/17 07:21:30 | 
+INFO   | jvm 1    | 2013/11/17 07:21:30 | --- [ Network Cards ] -----------------------------------------
+INFO   | jvm 1    | 2013/11/17 07:21:30 | 
+INFO   | jvm 1    | 2013/11/17 07:21:31 | Card:Software Loopback Interface 1
+INFO   | jvm 1    | 2013/11/17 07:21:31 |  -> 127.0.0.1
+INFO   | jvm 1    | 2013/11/17 07:21:31 |  -> 0:0:0:0:0:0:0:1
+INFO   | jvm 1    | 2013/11/17 07:21:31 | Card:WAN Miniport (L2TP)
+INFO   | jvm 1    | 2013/11/17 07:21:31 | Card:WAN Miniport (SSTP)
+INFO   | jvm 1    | 2013/11/17 07:21:31 | Card:WAN Miniport (IKEv2)
+INFO   | jvm 1    | 2013/11/17 07:21:31 | Card:WAN Miniport (PPTP)
+INFO   | jvm 1    | 2013/11/17 07:21:31 | Card:WAN Miniport (PPPOE)
+INFO   | jvm 1    | 2013/11/17 07:21:31 | Card:WAN Miniport (IP)
+INFO   | jvm 1    | 2013/11/17 07:21:31 | Card:WAN Miniport (IPv6)
+INFO   | jvm 1    | 2013/11/17 07:21:31 | Card:WAN Miniport (Network Monitor)
+INFO   | jvm 1    | 2013/11/17 07:21:31 | Card:Microsoft Kernel Debug Network Adapter
+INFO   | jvm 1    | 2013/11/17 07:21:31 | Card:RAS Async Adapter
+INFO   | jvm 1    | 2013/11/17 07:21:31 | Card:Intel(R) 82574L Gigabit Network Connection
+INFO   | jvm 1    | 2013/11/17 07:21:31 |  -> 185.25.48.101
+INFO   | jvm 1    | 2013/11/17 07:21:31 |  -> 185.25.48.67
+INFO   | jvm 1    | 2013/11/17 07:21:31 |  -> fe80:0:0:0:9d22:5432:7b3e:4b34%12
+INFO   | jvm 1    | 2013/11/17 07:21:31 | Card:Microsoft ISATAP Adapter
+INFO   | jvm 1    | 2013/11/17 07:21:31 |  -> fe80:0:0:0:200:5efe:b919:3043%13
+INFO   | jvm 1    | 2013/11/17 07:21:31 |  -> fe80:0:0:0:200:5efe:b919:3065%13
+INFO   | jvm 1    | 2013/11/17 07:21:31 | Card:Microsoft 6to4 Adapter
+INFO   | jvm 1    | 2013/11/17 07:21:31 | Card:Teredo Tunneling Pseudo-Interface
+INFO   | jvm 1    | 2013/11/17 07:21:31 |  -> fe80:0:0:0:0:100:7f:fffe%15
+INFO   | jvm 1    | 2013/11/17 07:21:31 | Card:WAN Miniport (IP)-QoS Packet Scheduler-0000
+INFO   | jvm 1    | 2013/11/17 07:21:31 | Card:WAN Miniport (IPv6)-QoS Packet Scheduler-0000
+INFO   | jvm 1    | 2013/11/17 07:21:31 | Card:WAN Miniport (Network Monitor)-QoS Packet Scheduler-0000
+INFO   | jvm 1    | 2013/11/17 07:21:31 | Card:Intel(R) 82574L Gigabit Network Connection-QoS Packet Scheduler-0000
+INFO   | jvm 1    | 2013/11/17 07:21:31 | Card:Intel(R) 82574L Gigabit Network Connection-WFP 802.3 MAC Layer LightWeight Filter-0000
+INFO   | jvm 1    | 2013/11/17 07:21:31 | Card:Intel(R) 82574L Gigabit Network Connection-WFP Native MAC Layer LightWeight Filter-0000
+INFO   | jvm 1    | 2013/11/17 07:38:50 | 
+INFO   | jvm 1    | 2013/11/17 07:38:50 | 
+INFO   | jvm 1    | 2013/11/17 07:38:50 | --- [ Licence Loaded ] ------------------------------------
+INFO   | jvm 1    | 2013/11/17 07:38:50 | 
+INFO   | jvm 1    | 2013/11/17 07:38:50 | License Type 	-> PRO
+INFO   | jvm 1    | 2013/11/17 07:38:50 | License Owner 	-> --== Crack By Sam ==--
+INFO   | jvm 1    | 2013/11/17 07:38:50 | Max. Clients 	-> Unlimited
+INFO   | jvm 1    | 2013/11/17 07:38:50 | BlueBox Type 	-> Demo Version
+INFO   | jvm 1    | 2013/11/17 07:38:50 | 
+INFO   | jvm 1    | 2013/11/17 07:38:50 | --- [ Zones & Rooms ] -------------------------------------
+INFO   | jvm 1    | 2013/11/17 07:38:50 | 
+INFO   | jvm 1    | 2013/11/17 07:38:50 | 	DB Manager Activated ( com.mysql.jdbc.Driver )
+INFO   | jvm 1    | 2013/11/17 07:38:54 | Zone: zone_master
+INFO   | jvm 1    | 2013/11/17 07:38:54 | 
+INFO   | jvm 1    | 2013/11/17 07:38:54 | 	Lobby              (id: 1, max: 40, pass:N)
+INFO   | jvm 1    | 2013/11/17 07:38:55 | 
+INFO   | jvm 1    | 2013/11/17 07:38:55 | 
+INFO   | jvm 1    | 2013/11/17 07:38:55 | --- [ Ente Isla ] ------------------------------------
+INFO   | jvm 1    | 2013/11/17 07:38:55 | 
+INFO   | jvm 1    | 2013/11/17 07:38:55 | 	Accepting Requests:
+INFO   | jvm 1    | 2013/11/17 07:38:55 | 
+INFO   | jvm 1    | 2013/11/17 07:38:55 | 	 -> removeItem
+INFO   | jvm 1    | 2013/11/17 07:38:55 | 	 -> doMining
+INFO   | jvm 1    | 2013/11/17 07:38:55 | 	 -> house
+INFO   | jvm 1    | 2013/11/17 07:38:55 | 	 -> acceptQuest
+INFO   | jvm 1    | 2013/11/17 07:38:55 | 	 -> getfriendlist
+INFO   | jvm 1    | 2013/11/17 07:38:55 | 	 -> afk
+INFO   | jvm 1    | 2013/11/17 07:38:55 | 	 -> aggroMon
+INFO   | jvm 1    | 2013/11/17 07:38:55 | 	 -> bankToInv
+INFO   | jvm 1    | 2013/11/17 07:38:55 | 	 -> declineFriend
+INFO   | jvm 1    | 2013/11/17 07:38:55 | 	 -> whisper
+INFO   | jvm 1    | 2013/11/17 07:38:55 | 	 -> getDrop
+INFO   | jvm 1    | 2013/11/17 07:38:55 | 	 -> sellItem
+INFO   | jvm 1    | 2013/11/17 07:38:55 | 	 -> restRequest
+INFO   | jvm 1    | 2013/11/17 07:38:55 | 	 -> doFishing
+INFO   | jvm 1    | 2013/11/17 07:38:55 | 	 -> buyItem
+INFO   | jvm 1    | 2013/11/17 07:38:55 | 	 -> guild
+INFO   | jvm 1    | 2013/11/17 07:38:55 | 	 -> buyBagSlots
+INFO   | jvm 1    | 2013/11/17 07:38:55 | 	 -> mute
+INFO   | jvm 1    | 2013/11/17 07:38:55 | 	 -> buyHouseSlots
+INFO   | jvm 1    | 2013/11/17 07:38:55 | 	 -> updateQuest
+INFO   | jvm 1    | 2013/11/17 07:38:55 | 	 -> da
+INFO   | jvm 1    | 2013/11/17 07:38:55 | 	 -> setAchievement
+INFO   | jvm 1    | 2013/11/17 07:38:55 | 	 -> getAdData
+INFO   | jvm 1    | 2013/11/17 07:38:55 | 	 -> getXmasGift
+INFO   | jvm 1    | 2013/11/17 07:38:55 | 	 -> firstJoin
+INFO   | jvm 1    | 2013/11/17 07:38:55 | 	 -> enhanceItemShop
+INFO   | jvm 1    | 2013/11/17 07:38:55 | 	 -> getQuests
+INFO   | jvm 1    | 2013/11/17 07:38:55 | 	 -> changeArmorColor
+INFO   | jvm 1    | 2013/11/17 07:38:55 | 	 -> gar
+INFO   | jvm 1    | 2013/11/17 07:38:55 | 	 -> cmd
+INFO   | jvm 1    | 2013/11/17 07:38:55 | 	 -> housesave
+INFO   | jvm 1    | 2013/11/17 07:38:55 | 	 -> changeColor
+INFO   | jvm 1    | 2013/11/17 07:38:55 | 	 -> deleteFriend
+INFO   | jvm 1    | 2013/11/17 07:38:55 | 	 -> bankFromInv
+INFO   | jvm 1    | 2013/11/17 07:38:55 | 	 -> cc
+INFO   | jvm 1    | 2013/11/17 07:38:55 | 	 -> gp
+INFO   | jvm 1    | 2013/11/17 07:38:55 | 	 -> loadHairShop
+INFO   | jvm 1    | 2013/11/17 07:38:55 | 	 -> bankSwapInv
+INFO   | jvm 1    | 2013/11/17 07:38:55 | 	 -> genderSwap
+INFO   | jvm 1    | 2013/11/17 07:38:55 | 	 -> loadShop
+INFO   | jvm 1    | 2013/11/17 07:38:55 | 	 -> moveToCell
+INFO   | jvm 1    | 2013/11/17 07:38:55 | 	 -> requestFriend
+INFO   | jvm 1    | 2013/11/17 07:38:55 | 	 -> retrieveUserData
+INFO   | jvm 1    | 2013/11/17 07:38:55 | 	 -> buyBankSlots
+INFO   | jvm 1    | 2013/11/17 07:38:55 | 	 -> equipItem
+INFO   | jvm 1    | 2013/11/17 07:38:55 | 	 -> getMapItem
+INFO   | jvm 1    | 2013/11/17 07:38:55 | 	 -> dd
+INFO   | jvm 1    | 2013/11/17 07:38:55 | 	 -> retrieveInventory
+INFO   | jvm 1    | 2013/11/17 07:38:55 | 	 -> loadBank
+INFO   | jvm 1    | 2013/11/17 07:38:55 | 	 -> ia
+INFO   | jvm 1    | 2013/11/17 07:38:55 | 	 -> geia
+INFO   | jvm 1    | 2013/11/17 07:38:55 | 	 -> unequipItem
+INFO   | jvm 1    | 2013/11/17 07:38:55 | 	 -> enhanceItemLocal
+INFO   | jvm 1    | 2013/11/17 07:38:55 | 	 -> duel
+INFO   | jvm 1    | 2013/11/17 07:38:55 | 	 -> tryQuestComplete
+INFO   | jvm 1    | 2013/11/17 07:38:55 | 	 -> serverUseItem
+INFO   | jvm 1    | 2013/11/17 07:38:55 | 	 -> mtcid
+INFO   | jvm 1    | 2013/11/17 07:38:55 | 	 -> emotea
+INFO   | jvm 1    | 2013/11/17 07:38:55 | 	 -> mv
+INFO   | jvm 1    | 2013/11/17 07:38:55 | 	 -> addFriend
+INFO   | jvm 1    | 2013/11/17 07:38:55 | 	 -> message
+INFO   | jvm 1    | 2013/11/17 07:38:55 | 	 -> retrieveUserDatas
+INFO   | jvm 1    | 2013/11/17 07:38:55 | 	 -> isModerator
+INFO   | jvm 1    | 2013/11/17 07:38:55 | 	 -> resPlayerTimed
+INFO   | jvm 1    | 2013/11/17 07:38:55 | 	 -> book
+INFO   | jvm 1    | 2013/11/17 07:38:55 | 	 -> em
+INFO   | jvm 1    | 2013/11/17 07:38:55 | 	 -> reloadShop
+INFO   | jvm 1    | 2013/11/17 07:38:55 | 
+INFO   | jvm 1    | 2013/11/17 07:38:55 | 07:38:55.192 - [ INFO ] > Zone Extension [ zm ] created, for zone:zone_master
+INFO   | jvm 1    | 2013/11/17 07:38:55 | 
+INFO   | jvm 1    | 2013/11/17 07:38:56 | 
+INFO   | jvm 1    | 2013/11/17 07:38:56 | 
+INFO   | jvm 1    | 2013/11/17 07:38:56 | --- [ Server Starting ] ---------------------------------
+INFO   | jvm 1    | 2013/11/17 07:38:56 | 
+INFO   | jvm 1    | 2013/11/17 07:38:56 | Server address: 185.25.48.101
+INFO   | jvm 1    | 2013/11/17 07:38:56 | Server port   : 5588
+INFO   | jvm 1    | 2013/11/17 07:38:56 | 
+INFO   | jvm 1    | 2013/11/17 07:38:56 | 07:38:56.743 - [ INFO ] > [TaskScheduler] ... started ::
+INFO   | jvm 1    | 2013/11/17 07:38:56 | 07:38:56.747 - [ INFO ] > [BlueBoxHandler]... started :: 
+INFO   | jvm 1    | 2013/11/17 07:38:56 | 07:38:56.749 - [ INFO ] > [EventWriter] ..... started :: 4 thread(s)
+INFO   | jvm 1    | 2013/11/17 07:38:56 | 07:38:56.749 - [ INFO ] > [SystemHandler] ... started :: 1 thread(s)
+INFO   | jvm 1    | 2013/11/17 07:38:56 | 07:38:56.749 - [ INFO ] > [ExtensionHandler]. started :: 4 thread(s)
+INFO   | jvm 1    | 2013/11/17 07:38:56 | 07:38:56.749 - [ INFO ] > [DeadChannelsPolicy: strict]
+INFO   | jvm 1    | 2013/11/17 07:38:56 | 07:38:56.750 - [ INFO ] > Server is up and running!
+INFO   | jvm 1    | 2013/11/17 07:38:56 | 
+INFO   | jvm 1    | 2013/11/17 07:38:56 | 
+INFO   | jvm 1    | 2013/11/17 07:38:56 | --- [ Maou MExt ] ------------------------------------
+INFO   | jvm 1    | 2013/11/17 07:38:56 | 
+INFO   | jvm 1    | 2013/11/17 07:38:56 | 	Author: Mystical
+INFO   | jvm 1    | 2013/11/17 07:38:56 | 	Version: Maou MExt v2.2 b327
+INFO   | jvm 1    | 2013/11/17 07:38:56 | 
+INFO   | jvm 1    | 2013/11/17 07:38:56 | 	(c) 2013 Hidden Project Team
+INFO   | jvm 1    | 2013/11/17 07:38:56 | 
+INFO   | jvm 1    | 2013/11/17 07:38:58 | [ FINE ][ SmartFoxServer.lostConnection ] >> User [ java.nio.channels.SocketChannel[closed] ] removed
+INFO   | jvm 1    | 2013/11/17 07:38:58 | [ FINE ][ SmartFoxServer.lostConnection ] >> User [ java.nio.channels.SocketChannel[closed] ] removed
+INFO   | jvm 1    | 2013/11/17 07:38:58 | [ INFO ][ EnteIsla.loadConfigurations ] >> Loading server configuration: C:\sfs\Server\conf\Maou_MExtv2.conf
+INFO   | jvm 1    | 2013/11/17 07:38:58 | [ INFO ][ EnteIsla.loadConfigurations ] >> mext.maou.v2.servername: Infinity Arts
+INFO   | jvm 1    | 2013/11/17 07:38:58 | [ INFO ][ EnteIsla.loadConfigurations ] >> mext.maou.v2.staffonly: false
+INFO   | jvm 1    | 2013/11/17 07:38:58 | [ INFO ][ EnteIsla.loadConfigurations ] >> Server configuration loaded.
+INFO   | jvm 1    | 2013/11/17 07:38:58 | [ INFO ][ World.setExt ] >> ScheduledThreadPoolExecutor created, pool size: 8 threads
+INFO   | jvm 1    | 2013/11/17 07:38:58 | [ INFO ][ World.cacheObjects ] >> Caching items...
+INFO   | jvm 1    | 2013/11/17 07:38:59 | [ INFO ][ Database.run ] >> Database instance now running.
+INFO   | jvm 1    | 2013/11/17 07:38:59 | [ FINE ][ SmartFoxServer.lostConnection ] >> User [ java.nio.channels.SocketChannel[closed] ] removed
+INFO   | jvm 1    | 2013/11/17 07:38:59 | [ FINE ][ SmartFoxServer.lostConnection ] >> User [ java.nio.channels.SocketChannel[closed] ] removed
+INFO   | jvm 1    | 2013/11/17 07:38:59 | [ FINE ][ SmartFoxServer.lostConnection ] >> User [ java.nio.channels.SocketChannel[closed] ] removed
+INFO   | jvm 1    | 2013/11/17 07:39:00 | [ FINE ][ SmartFoxServer.lostConnection ] >> User [ java.nio.channels.SocketChannel[closed] ] removed
+INFO   | jvm 1    | 2013/11/17 07:39:00 | [ FINE ][ EventWriter.processEvent ] >> failed writing to channel: java.nio.channels.SocketChannel[closed]
+INFO   | jvm 1    | 2013/11/17 07:39:03 | [ FINE ][ SmartFoxServer.lostConnection ] >> User [ java.nio.channels.SocketChannel[closed] ] removed
+INFO   | jvm 1    | 2013/11/17 07:39:03 | [ FINE ][ SmartFoxServer.lostConnection ] >> User [ java.nio.channels.SocketChannel[closed] ] removed
+INFO   | jvm 1    | 2013/11/17 07:39:05 | [ INFO ][ World.cacheObjects ] >> Cached 2199 items, 41 classes, 262 skills, 62 auras, 174 hairs, 7 factions.
+INFO   | jvm 1    | 2013/11/17 07:39:05 | [ INFO ][ World.cacheObjects ] >> Caching shops...
+INFO   | jvm 1    | 2013/11/17 07:39:05 | [ INFO ][ World.cacheObjects ] >> Cached 59 shops, 3 hairshops.
+INFO   | jvm 1    | 2013/11/17 07:39:05 | [ INFO ][ World.cacheObjects ] >> Caching areas...
+INFO   | jvm 1    | 2013/11/17 07:39:06 | [ INFO ][ World.cacheObjects ] >> Cached 71 areas, 140 monsters.
+INFO   | jvm 1    | 2013/11/17 07:39:06 | [ INFO ][ World.cacheObjects ] >> Caching quests...
+INFO   | jvm 1    | 2013/11/17 07:39:06 | [ INFO ][ World.cacheObjects ] >> Cached 189 quests.
+INFO   | jvm 1    | 2013/11/17 07:39:06 | [ INFO ][ World.cacheObjects ] >> Caching enhancements...
+INFO   | jvm 1    | 2013/11/17 07:39:06 | [ FINE ][ SmartFoxServer.lostConnection ] >> User [ java.nio.channels.SocketChannel[closed] ] removed
+INFO   | jvm 1    | 2013/11/17 07:39:06 | [ INFO ][ World.cacheObjects ] >> Cached 80 enhancements.
+INFO   | jvm 1    | 2013/11/17 07:39:06 | [ FINE ][ World.cacheObjects ] >> CVU loaded.
+INFO   | jvm 1    | 2013/11/17 07:39:06 | [ FINE ][ World.cacheObjects ] >> Wheel settings loaded.
+INFO   | jvm 1    | 2013/11/17 07:39:06 | [ FINE ][ World.cacheObjects ] >> News string loaded.
+INFO   | jvm 1    | 2013/11/17 07:39:07 | [ FINE ][ World.cacheObjects ] >> Message of the day loaded.
+INFO   | jvm 1    | 2013/11/17 07:39:07 | [ INFO ][ World.launchEvents ] >> Server events launched.
+INFO   | jvm 1    | 2013/11/17 07:39:07 | [ FINE ][ SmartFoxServer.lostConnection ] >> User [ java.nio.channels.SocketChannel[closed] ] removed
+INFO   | jvm 1    | 2013/11/17 07:39:07 | [ FINE ][ SmartFoxServer.lostConnection ] >> User [ java.nio.channels.SocketChannel[closed] ] removed
+INFO   | jvm 1    | 2013/11/17 07:39:09 | [ FINE ][ SmartFoxServer.lostConnection ] >> User [ java.nio.channels.SocketChannel[closed] ] removed
+INFO   | jvm 1    | 2013/11/17 07:39:09 | [ FINE ][ SmartFoxServer.lostConnection ] >> User [ java.nio.channels.SocketChannel[closed] ] removed
+INFO   | jvm 1    | 2013/11/17 07:39:10 | [ FINE ][ SmartFoxServer.lostConnection ] >> User [ java.nio.channels.SocketChannel[closed] ] removed
+INFO   | jvm 1    | 2013/11/17 07:39:12 | [ INFO ][ EnteIsla.handleInternalEvent ] >> Initializing command line...
+INFO   | jvm 1    | 2013/11/17 07:39:12 | 
+INFO   | jvm 1    | 2013/11/17 07:39:12 | 
+INFO   | jvm 1    | 2013/11/17 07:39:12 | Only SEVERE logs will be displayed. Type 'help' for a list of commands.
+INFO   | jvm 1    | 2013/11/17 07:39:12 | 
+INFO   | jvm 1    | 2013/11/17 07:39:13 | MExt > 
+INFO   | jvm 1    | 2013/11/17 07:43:12 | 
+INFO   | jvm 1    | 2013/11/17 07:43:12 | 
+INFO   | jvm 1    | 2013/11/17 07:43:12 | Shutting down server...
+INFO   | jvm 1    | 2013/11/17 07:43:12 | 
+STATUS | wrapper  | 2013/11/17 07:43:14 | <-- Wrapper Stopped

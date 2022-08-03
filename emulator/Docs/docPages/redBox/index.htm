@@ -1,0 +1,173 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<title>SmartFoxServer Documentation</title>
+		<script language="javascript" src="../../lib.js"></script>
+		<link href="../../main.css" rel="stylesheet" type="text/css">
+		
+		<style type="text/css" media="screen">
+			.sideNoteTitle
+			{
+				font-size: 120%;
+				font-weight: bold;
+				color: #888;
+			}
+			.sideNote
+			{
+				font: 110% Georgia, Verdana, Arial;
+				line-height: 19px;
+				margin: 20px;
+				padding: 10px;
+				background-color: #f6f6f6;
+				border: 2px dashed #CCC;
+				color: #333;
+			}
+		</style>
+	</head>
+
+<body class="bodyStyle">
+	 <p class="title">10.1 RedBox overview</p>
+	
+	<img src="images/redbox_logo.png" alt="redbox" border="0" />
+	
+		<p>
+			The <strong>RedBox</strong> project is a free add-on for <strong>SmartFoxServer PRO</strong> that adds audio and video streaming capabilities, 
+			making it possible to integrate these features in any existing SmartFoxServer application.
+		</p>
+		<p>
+
+			Implementing an A/V chat has never been this simple with <strong>SmartFoxServer</strong>:
+			<ul>
+				<li>Easy A/V chatting and streaming thanks to the RedBox add-on.</li>
+				<li>Advanced features for A/V chat invitations, live events, managing the list of media files and more...</li>
+				<li>Powerful room/user/buddy management through the SmartFoxServer framework and API</li>
+			</ul> 
+		</p>
+		<p style="width:700px; border: 1px dotted #cc0000; background-color:#ffffee; padding:10px;">
+			The RedBox add-on comes for <strong>free</strong> including <strong>source code</strong>, allowing developers to further expand its functionalities!
+		</p>
+
+		<p>
+			The features implemented out-of-the-box by the RedBox are:
+			<ul>
+				<li>Live one-to-one audio/video chat</li>
+				<li>Live events (one broadcaster, many subscribers)</li>
+				<li>Remote A/V recording (video messages etc...)</li>
+				<li>Video streaming</li>
+
+				<li>New simple API for handling A/V chat invitations, streaming etc...</li>
+			</ul>
+		</p>
+		
+		<p class="subtitle">&raquo; The components</p>
+		<p>The RedBox comes with both server-side and a client-side elements. Once you have installed <strong>SmartFoxServer PRO</strong> you will find the following components:</p>
+		<ul>
+			<li><strong>Server/RedBox/</strong><br>
+				This is the server-side part. The RedBox is based on the free, open-source <a href="http://osflash.org/red5" title="Red5 : Open Source Flash Server Open Source Flash" target="_blank">Red5 streaming server</a>.
+			</li>
+			<br>
+			<li>
+				<strong>Flash API/RedBoxClient_AS3/</strong><br>
+				Here you find the RedBox client side API classes with relative sources.
+			</li>
+			<br>
+			<li>
+				<strong>Examples/Redbox/</strong><br>
+				Here you find complete Actionscript 3 projects showing the each of the RedBox major features. Each example comes with fully commented source code.
+			</li>
+			<br>
+			<li>
+				<strong>Server/javaExtensions/</strong><br>
+				In this folder you find the server-side extensions used by the RedBox, in the package com.smartfoxserver.redbox<br>
+				You also find the complete extension source code in the RedBoxExtension.zip file.
+			</li>
+			<br>
+			<li>
+				<strong>redbox.properties file:</strong><br>
+				The file is located in the Server/ folder and it can be used to configure a few RedBox settings:
+				<ul>
+					<li>log: toggles RedBox server side logging</li>
+					<li>red5Path: points to the Red5 location</li>
+					<li>lastModifiedFormat: specifies &quot;Last modified&quot; date format in a/v clip data</li>
+				</ul>
+			</li>
+			<br>
+			<li>The documentation of the <strong>client side RedBox API</strong> is found in this same section of the documentation (10.4)</li>
+		</ul>
+		
+		<p class="subtitle">&raquo; Trying the examples</p>
+		<p>Follow these simple steps:</p>
+		<ol>
+			<li>Start SmartFoxServer PRO</li>
+			<li>
+				Start Red5:
+				<ul>
+					<li>Windows: double click red5.bat</li>
+					<li>MacOS X: double click Red5 application</li>
+					<li>Linux / Unix: launch the red5.sh script</li>
+				</ul>
+			</li>
+			<li>
+				Go to the Examples/RedBox/ folder and run any of the examples available. The SWF files are located inside each example's folder
+				inside the bin/ directory.
+			</li>
+		</ol>
+		
+		<p style="width:700px; border: 1px dotted #cc0000; background-color:#ffffee; padding:10px;">
+			<strong>Problems running the examples?</strong> <br>
+			Make sure the Flash Player security sandbox is not silently blocking access to your local files or network.<br>
+			Go the <a href="http://www.macromedia.com/support/documentation/en/flashplayer/help/settings_manager04.html" title="Adobe - Flash Player : Settings Manager - Global Security Settings panel">Flash Player Global Security Settings page</a>
+			and make sure that the SWF file is listed in the allowed list.
+		<br><br>
+		<strong>Tip:</strong> if you don't want to allow each file individually you can add the entire folder that contains all the examples.
+		</p>
+		
+		<p class="subtitle">&raquo; Creating your own RedBox applications</p>
+		<p>
+			Adding live audio/video streams to your existing applications or creating a brand new one is very simple. 
+			All you have to do is importing the RedBox client class(es) based on what your application will do.
+			The Rebdox API have been split into various classes:
+			
+			<ul>
+				<li>
+					<strong>AVChatManager:</strong><br>
+					This class is responsible for audio/video chat implementation by means of the connection to the Red5 server.
+					The AVChatManager handles the chat workflow (send request, accept or refuse it, establish or stop connection, etc.) and the live streaming to/from the Red5 server.
+				</li>
+				<br>
+				<li>
+					<strong>AVClipManager:</strong><br>
+					This class is responsible for audio/video clip recording &amp; playback through the connection to the Red5 server.
+					The AVClipManager handles the list of available a/v clips, their custom additional properties and the streaming to/from the Red5 server.
+				</li>
+				<br>
+				<li>
+					<strong>AVCastManager:</strong><br>
+					This class is responsible for managing audio/video live casts inside the room joined by the user, making it possible to create live web events or a/v conferences.
+					The AVCastManager handles the live cast publishing/playing to/from the Red5 server.
+					Unlike the other RedBox classes, the AVCastManager works on a room basis to leverage the access control and moderation features of SmartFoxServer rooms.
+				</li>
+			</ul>
+		</p>
+		
+		<p>
+			On the <strong>server side</strong> you will simply add the <strong>RedBox extension</strong> to your Zone. 
+			This will activate the RedBox services for your application. <br>
+			You should add this line in your XML Zone declaration:
+		</p>
+<pre class="code">
+&lt;Extensions&gt;
+	&lt;extension name="__$RedBox$__" className="com.smartfoxserver.redbox.RedBoxExtension" type="java" /&gt;
+&lt;/Extensions&gt;			
+</pre>
+	<p>
+		The name assigned to the extension <em>__$RedBox$__</em> is mandatory and should not be changed.
+	</p>
+	
+	
+<p>&nbsp;</p>
+	
+</body>
+</html>

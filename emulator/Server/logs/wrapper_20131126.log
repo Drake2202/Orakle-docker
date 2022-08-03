@@ -1,0 +1,11 @@
+STATUS | wrapper  | 2013/11/26 14:44:02 | --> Wrapper Started as Service
+STATUS | wrapper  | 2013/11/26 14:44:02 | Java Service Wrapper Community Edition 64-bit 3.5.20
+STATUS | wrapper  | 2013/11/26 14:44:02 |   Copyright (C) 1999-2013 Tanuki Software, Ltd. All Rights Reserved.
+STATUS | wrapper  | 2013/11/26 14:44:02 |     http://wrapper.tanukisoftware.com
+STATUS | wrapper  | 2013/11/26 14:44:02 | 
+STATUS | wrapper  | 2013/11/26 14:44:04 | Launching a JVM...
+ERROR  | wrapper  | 2013/11/26 14:44:36 | Startup failed: Timed out waiting for a signal from the JVM.
+ERROR  | wrapper  | 2013/11/26 14:44:36 | JVM did not exit on request, termination requested.
+ERROR  | wrapper  | 2013/11/26 14:44:51 | Failed to terminate the JVM, abort all restart.
+ERROR  | wrapper  | 2013/11/26 14:44:51 | Failed to terminate the JVM.
+STATUS | wrapper  | 2013/11/26 14:44:52 | <-- Wrapper Stopped

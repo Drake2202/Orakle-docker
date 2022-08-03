@@ -1,0 +1,26 @@
+2016/06/29 01:43:43.364 - [ INFO ] [id: 10] (SmartFoxServer.bootH2Engine): Starting h2 engine...
+2016/06/29 01:43:45.125 - [ INFO ] [id: 10] (ExtensionHandler.createExtension): Zone Extension [ zm ] created, for zone:zone_master
+2016/06/29 01:43:45.134 - [ INFO ] [id: 10] (SmartFoxServer.setupTaskScheduler): [TaskScheduler] ... started ::
+2016/06/29 01:43:45.134 - [ INFO ] [id: 10] (SmartFoxServer.run): [BlueBoxHandler]... started :: 
+2016/06/29 01:43:45.150 - [ INFO ] [id: 10] (SmartFoxServer.run): [EventWriter] ..... started :: 1 thread(s)
+2016/06/29 01:43:45.150 - [ INFO ] [id: 10] (SmartFoxServer.run): [SystemHandler] ... started :: 1 thread(s)
+2016/06/29 01:43:45.150 - [ INFO ] [id: 10] (SmartFoxServer.run): [ExtensionHandler]. started :: 1 thread(s)
+2016/06/29 01:43:45.150 - [ INFO ] [id: 10] (SmartFoxServer.run): [DeadChannelsPolicy: strict]
+2016/06/29 01:43:45.150 - [ INFO ] [id: 10] (SmartFoxServer.run): Server is up and running!
+[ INFO ][ EnteIsla.loadConfigurations ] >> Loading server configuration: {0}
+[ INFO ][ EnteIsla.loadConfigurations ] >> {0}: {1}
+[ INFO ][ EnteIsla.loadConfigurations ] >> {0}: {1}
+[ INFO ][ EnteIsla.loadConfigurations ] >> Server configuration loaded.
+[ INFO ][ World.setExt ] >> ScheduledThreadPoolExecutor created, pool size: {0} threads
+[ INFO ][ World.cacheObjects ] >> Caching areas...
+[ INFO ][ World.cacheObjects ] >> Cached {0} areas, {1} monsters.
+[ INFO ][ World.cacheObjects ] >> Caching items...
+[ INFO ][ World.cacheObjects ] >> Cached {0} items, {1} classes, {2} skills, {3} auras, {4} hairs, {5} factions.
+[ INFO ][ World.cacheObjects ] >> Caching quests...
+[ INFO ][ World.cacheObjects ] >> Cached {0} quests.
+[ INFO ][ World.cacheObjects ] >> Caching shops...
+[ INFO ][ World.cacheObjects ] >> Cached {0} shops, {1} hairshops.
+[ INFO ][ World.cacheObjects ] >> Caching enhancements...
+[ INFO ][ World.cacheObjects ] >> Cached {0} enhancements.
+[ INFO ][ World.launchEvents ] >> Server events launched.
+[ INFO ][ EnteIsla.handleInternalEvent ] >> Initializing command line...

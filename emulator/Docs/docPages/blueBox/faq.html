@@ -1,0 +1,156 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>SmartFoxServer Documentation</title>
+<script language="javascript" src="../../lib.js"></script>
+<link href="../../main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="bodyStyle">
+ 	<p class="title">9.2 BlueBox frequently asked questions </p>
+	
+	<ul>
+		<li>
+			<strong style="color:#cc0000">What's the recommended value for polling speed?</strong><br>
+			A value between <strong>750-1000ms.</strong> is very good for all chatting, turn-based games and similar kind of applications. 
+			It will add minimum lag to the client responsiveness and it will keep the server cpu usage low.
+			<br>
+			Lower values (<strong>200-500ms.</strong>) can be used where a faster responsiveness is necessary. For super fast real-time games you can try values
+			between 50 and 100ms. We don't recommend using values below 50ms.
+			<br>
+
+			With settings <strong>&lt; 200 ms.</strong> the cpu usage will grow significantly as the http connection and packet wrapping/unwrapping is more expensive than
+			using a persistent connection.<br><br>
+		</li>
+		<li>
+			<strong style="color:#cc0000">What's the difference between regular polling and the BlueBox polling?</strong><br>
+			With &quot;regular polling&quot; the client will ask the server for new data/events every <em>x</em> seconds. 
+			This is quite inefficient as the server will receive many continuous requests even when there's nothing to send back to the client.
+			Additionally there are times when an event occurs just a few milliseconds after the client asked for new data. If this happens the lag time
+			is almost doubled as the client didn't receive anything in the last poll request and now has to wait another full interval before he can ask again.
+			Because of this, even if the poll interval is set to 1 second, the lag can get <strong>as high as 2 seconds!</strong>
+
+			<br><br>
+			The SmartFoxServer <strong>BlueBox</strong> optimizes both scenarios by suspending HTTP requests and resuming them immediately, as data becomes available.<br>  
+			The result is that server <u>minimizes the client lag</u>, <u>greatly enhances the performance</u> and makes <u>smart use of resources and bandwidth</u>. <br><br>
+
+			Additionally this allows the <strong>BlueBox</strong> to support extremely low polling values such as 300ms. (and lower) without the risk of bombarding the server with requests when no data is
+			available for the client.
+			<br><br>
+		</li>
+		<li>
+			<strong style="color:#cc0000">What's the recommend SmartFoxServer/BlueBox port configuration?</strong><br>
+			Probably one of the best TCP port configuration is the following:
+			<ul>
+				<li><strong>SmartFoxServer</strong> listening on port <strong>443</strong> (https)</li>
+				<li><strong>BlueBox</strong> listening on port <strong>80</strong> (http)</li>
+			</ul>
+			<p>
+				These ports are highly likely to be open on most local networks as they provide access to http servers. 
+				With this configuration the client will first try to establish a socket connection on port 443 and if this is unavailable it
+				will connect to the http-tunnel provided by the <strong>BlueBox</strong>.
+			</p>
+			<p>
+				<strong>NOTE:</strong><br>
+				Under Linux/Unix you will require root privileges to run applications that listen on port numbers &lt; 1024
+			</p>
+			<p>
+				By default the Server is configured this way:
+				<ul>
+					<li><strong>SmartFoxServer</strong>: port <strong>9339</strong></li>
+					<li><strong>BlueBox</strong>: port <strong>8080</strong></li>
+				</ul>
+				<br>
+			</p>
+		</li>
+		
+		<li>
+			<strong style="color:#cc0000">How do I change the default port (8080) used by the BlueBox</strong>
+			<br>
+			The BlueBox servlet runs in the embedded Jetty http-server. In order to change the TCP port it uses you will simply have to change the Jetty configuration and restart it. All the details are found at <strong>chapter 2.3</strong> of the documentation
+			<br><br>
+		</li>
+		
+		<li>
+			<strong style="color:#cc0000">How many concurrent clients can be handled by the BlueBox?</strong><br>
+			It's difficult to estimate, it all depends on the hardware, the type of game/application and the client latency settings.
+			If you plan to run thousands of http connections we highly recommend a 2x or 4x multi-core CPU.<br><br>
+		</li>
+				
+		<li>
+			<strong style="color:#cc0000">Is it possible to run the BlueBox on a dedicated server?</strong><br>
+			Yes, the BlueBox can run on its own dedicated machine.<br>
+			Using a dedicated server exclusively for HTTP connections enhances the performance further when handling thousands of clients or when using very low polling settings.  
+			<br><br>
+		</li>
+		
+		<li>
+			<strong style="color:#cc0000">How do I run the BlueBox on a dedicated server?</strong><br>
+			The BlueBox can be moved to a dedicated server by running it in standalone mode, in a Jetty http server instance. It is required that both the BlueBox machine and the SFS machine are located in the same LAN to avoid performance problems.
+			<br><br>
+			The following steps will guide you in setting up a standalone BlueBox:
+			<br><br>
+			<ol>
+				<li>Download and install the <strong>Jetty 6.x</strong> http server from <a href="http://www.mortbay.org/jetty/" title="jetty - Jetty WebServer">their website</a></li>
+				<li>Copy the <strong>BlueBox.war</strong> file from <strong>{your-sfs-installation-folder}/Server/webserver/webapps/</strong> to the <strong>webapps/</strong> folder in the freshly installed Jetty server.</li>
+				<li>Copy the <strong>bluebox.properties</strong> file from <strong>{your-sfs-installation-folder}/Server/</strong> to the new Jetty <strong>root folder</strong>.</li>
+<li>
+					Edit the copied <strong>bluebox.properties</strong> file by changing the <strong>serverMode</strong> to <strong>stand-alone</strong>, point the address and port to the SmartFoxServer 
+					instance and finally add a new parameter called <strong>client_idle_request_time</strong> which should match the <strong>webapps/</strong> folder setting of your SmartFoxServer.
+				</li>
+			</ol>
+			<br>
+			The following is an example of the final configuration:
+			<br>
+			<pre class="serverCode">
+log_level=FINER
+log_folder=./logs/
+log_max_size=100000
+log_max_files=5
+
+serverMode=stand-alone
+sfsAddr=10.10.10.1
+sfsPort=9339
+
+client_idle_time=30
+client_idle_request_time=300
+debug_mode=false
+			</pre>
+		</li>
+		
+		<li>
+			<strong style="color:#cc0000">Does the BlueBox limit any of the SmartFoxServer features?</strong><br>
+
+			With the the exclusion of a couple of minor things, no. All the features are available as if it was used with socket connections.
+			The only limitations are:
+			<ul>
+				<li>Banning by IP address</li>
+				<li>IP Filtering</li>
+			</ul>
+			These two features won't be available because BlueBox-ed users don't establish a direct connection with the server.
+			<br><br>
+		</li>
+		<li>
+			<strong style="color:#cc0000">When a user closes the browser he still appears to be connected for some time. Is this normal?</strong><br>
+			When a client closes the connection by quitting the Flash Player / browser you may still see him as connected to the
+			server. This is due to the fact that <strong>BlueBox</strong> does not use persistent connections, hence it can't immediately detect when
+			a client gets disconnected. In order to determine this it uses a timeout which can be changed in the <strong>bluebox.properties</strong> file.
+			<br><br>
+			The property is called <strong>client_idle_time</strong> and it is set to 30 seconds by default. <strong>Values &lt; 20 seconds are not recommended.</strong><br><br>
+		</li>
+	</ul>
+	
+	<p>&nbsp;</p>
+ 	
+	<hr width="99%" size="1" noshade>
+
+	<table width="99%"  border="0" cellspacing="0" cellpadding="4">
+	 <tr>
+	   <td align="center"><a href="../../index.htm" target="_top" class="navLinks">doc index </a></td>
+	 </tr>
+	</table>
+
+</body>
+</html>

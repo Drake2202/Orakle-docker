@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actionScriptProperties mainApplicationPath="SmartFoxTris.mxml" version="1">
+<compiler additionalCompilerArguments="-locale en_US" copyDependentFiles="true" generateAccessible="false" htmlExpressInstall="true" htmlGenerate="true" htmlHistoryManagement="true" htmlPlayerVersion="9.0.0" htmlPlayerVersionCheck="true" outputFolderPath="bin" sourceFolderPath="src" strict="true" warn="true">
+<compilerSourcePath>
+<compilerSourcePathEntry kind="1" linkType="1" path="/SmartFoxTris_AS3/src/classes"/>
+</compilerSourcePath>
+<libraryPath>
+<libraryPathEntry kind="3" linkType="2" path="${FRAMEWORKS}/libs/playerglobal.swc"/>
+<libraryPathEntry kind="3" linkType="1" path="${FRAMEWORKS}/libs/utilities.swc"/>
+<libraryPathEntry kind="3" linkType="1" path="${FRAMEWORKS}/libs/flex.swc" sourcepath="${FRAMEWORKS}/source"/>
+<libraryPathEntry kind="3" linkType="1" path="${FRAMEWORKS}/libs/framework.swc" sourcepath="${FRAMEWORKS}/source"/>
+<libraryPathEntry kind="3" linkType="1" path="${FRAMEWORKS}/libs/rpc.swc"/>
+<libraryPathEntry kind="3" linkType="1" path="${FRAMEWORKS}/libs/charts.swc" sourcepath="${FRAMEWORKS}/source"/>
+<libraryPathEntry kind="1" linkType="1" path="${FRAMEWORKS}/locale/{locale}"/>
+</libraryPath>
+<sourceAttachmentPath>
+<sourceAttachmentPathEntry kind="3" linkType="1" path="${FRAMEWORKS}/libs/flex.swc" sourcepath="${FRAMEWORKS}/source"/>
+<sourceAttachmentPathEntry kind="3" linkType="1" path="${FRAMEWORKS}/libs/framework.swc" sourcepath="${FRAMEWORKS}/source"/>
+<sourceAttachmentPathEntry kind="3" linkType="1" path="${FRAMEWORKS}/libs/charts.swc" sourcepath="${FRAMEWORKS}/source"/>
+<sourceAttachmentPathEntry kind="3" linkType="1" path="${DOCUMENTS}/SmartFoxClient_AS3/bin/SmartFoxClient_AS3.swc" sourcepath="/SmartFoxClient_AS3/src"/>
+</sourceAttachmentPath>
+</compiler>
+<applications>
+<application path="SmartFoxTris.mxml"/>
+</applications>
+<buildCSSFiles/>
+</actionScriptProperties>
